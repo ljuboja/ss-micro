@@ -1,0 +1,55 @@
+#summary {
+       @include breakpoint(1201px 5000px){
+  @include backImage('../images/summary1600.jpg', to bottom, .8, 0, 50% top);
+  }//1600
+   @include breakpoint(601px 1200px){
+  @include backImage('../images/summary1200.jpg', to bottom, .8, 0, 50% top);
+  }//1200
+  @include breakpoint(max-width 600px){
+  @include backImage('../images/summary400.jpg',  to bottom, .8, 0, 50% top);
+  }//400
+  @include clearfix;
+  article {
+    margin-top:40px;
+    background-color:rgba($dark, 0.45);
+    padding:30px;  
+    @include container(90%);
+    @include breakpoint($small) {
+      @include container(30em);
+      padding: 30px 20px 20px 45px;
+      margin-right:38%;
+    } //breakpoint
+  } //article
+
+  h1 {
+        font-family:$fontfamily;
+        color: $light;
+        font-size: 5em;
+        font-weight: $thin;
+        line-height: 0.8em;
+        //@include text-shadow($dark 0 0 10px);
+        text-align: left;
+        padding:20px 25px;
+        @include breakpoint(max-width $small){
+            font-size:2.5em;
+        }//breakpoint
+      } //h1
+      img{float:right;padding-right:20px;margin-top:1em;max-width:70%; height:auto;
+        @include breakpoint(max-width $small){
+        padding:5px;text-align:center;
+        }
+      }//img
+     p{
+     @include container(90%);
+    background-color:darken(rgba(197, 9, 9, 0.5),10);
+     font-weight:bold;
+     padding:2em;
+     line-height:1.6em;
+     text-align:left;
+     @include breakpoint($small) {
+     @include container(30em);
+     margin-right:38%;
+     }//breakpiont
+    }//p    
+  
+} //summary

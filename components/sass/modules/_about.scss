@@ -1,0 +1,54 @@
+#about {
+   @include breakpoint(1201px 5000px){
+  @include backImage('../images/about1600.jpg', to bottom, .8, 0, 50% top);
+  }//1600
+   @include breakpoint(601px 1200px){
+  @include backImage('../images/about1200.jpg', to bottom, .8, 0, 50% top);
+  }//1200
+  @include breakpoint(max-width 600px){
+  @include backImage('../images/about400.jpg', to bottom, .8, 0, 50% top);
+  }//400
+  border-bottom:10px solid white;
+  @include clearfix;
+  article {
+    margin-top:40px;
+    background-color:rgba($dark, 0.65);
+    //@include border-radius(5px);
+    padding:30px;
+ 
+    p{
+    }
+    @include container(90%);
+    @include breakpoint($small) {
+      @include container(30em);
+      padding: 30px 20px 20px 45px;
+      margin-right:38%;
+    } //breakpoint
+  } //article
+
+  h1 {
+        font-family:$thinfont;
+        color: $light;
+        font-size: 5em;
+        font-weight: $thin;
+        line-height: 0.8em;
+        //@include text-shadow($dark 0 0 10px);
+        text-align: left;
+        @include breakpoint(max-width $small){
+            font-size:3em;
+        }//breakpoint
+        padding:20px 25px;
+          span{
+          font-family:$fontfamily;
+          color:$light;
+          font-weight:$heavy;
+          }
+      } //h1
+
+      img{float:right;padding-right:20px;max-width:60%; height:auto;
+        @include breakpoint(max-width $small){
+        padding:5px;text-align:center;
+        }
+      }//img
+  
+} //welcome

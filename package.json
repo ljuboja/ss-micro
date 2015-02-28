@@ -1,0 +1,28 @@
+{
+  "name": "shelvingsystems",
+  "version": "0.0.1",
+  "description": "A micro website for ss",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ljuboja"
+  },
+  "author": "Ljubisa Djordjevic",
+  "devDependencies": {
+    "gulp": "^3.8.7",
+    "gulp-browserify": "^0.5.0",
+    "gulp-cache": "^0.2.8",
+    "gulp-compass": "^1.2.0",
+    "gulp-concat": "^2.3.4",
+    "gulp-connect": "^2.0.6",
+    "gulp-if": "^1.2.4",
+    "gulp-imagemin": "^2.2.1",
+    "gulp-kraken": "0.0.1",
+    "gulp-minify-html": "^0.1.4",
+    "gulp-uglify": "^0.3.1",
+    "gulp-util": "^2.2.20",
+    "jquery": "^2.1.1"
+  },
+  "dependencies": {
+    "imagemin-pngquant": "^4.0.0"
+  }
+}

@@ -1,0 +1,80 @@
+@include border-box-sizing; 
+
+$susy: (
+  columns: 12,
+  container: 60em,
+  gutters: 1/4,
+  gutter-position: inside
+);
+
+$narrow: 400px;
+$small: 650px;
+$medium: 960px;
+$wide: 1200px;
+
+
+// Color Palette
+$blue       : #063642;
+$yellow     : #EFC94C;
+$orange     : #E27A3F;
+$red        : #D2123D;
+$dark       : #000000;
+$light      : #FFFFFF;
+
+$backgroundColor    : $light;
+$typeDefault        : $dark;
+$navBackground      : $blue;
+$navForeground      : $light;
+$navHover           : $yellow;
+$navBrandBg         : $red;
+$headersubbg        : $dark;
+
+//Font variables
+$fontfamily       : 'gotham_probold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$thinfont         : 'gotham_thinregular', 'Helvetica Neue', Helvetica, Arial;
+$bodycopy         : 'news_gothicregular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+@font-face {
+    font-family: 'gotham_probold';
+    src: url('../fonts/GothaProBol-webfont.eot');
+    src: url('../fonts/GothaProBol-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/GothaProBol-webfont.woff2') format('woff2'),
+         url('../fonts/GothaProBol-webfont.woff') format('woff'),
+         url('../fonts/GothaProBol-webfont.ttf') format('truetype'),
+         url('../fonts/GothaProBol-webfont.svg#gotham_probold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}//gotam-bold
+@font-face {
+    font-family: 'gotham_thinregular';
+    src: url('../fonts/ufonts.com_gotham-thin-webfont.eot');
+    src: url('../fonts/ufonts.com_gotham-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ufonts.com_gotham-thin-webfont.woff2') format('woff2'),
+         url('../fonts/ufonts.com_gotham-thin-webfont.woff') format('woff'),
+         url('../fonts/ufonts.com_gotham-thin-webfont.ttf') format('truetype'),
+         url('../fonts/ufonts.com_gotham-thin-webfont.svg#gotham_thinregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}//gotam thin
+
+@font-face {
+    font-family: 'news_gothicregular';
+    src: url('../fonts/ufonts.com_news-gothic-regular-webfont.eot');
+    src: url('../fonts/ufonts.com_news-gothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ufonts.com_news-gothic-regular-webfont.woff2') format('woff2'),
+         url('../fonts/ufonts.com_news-gothic-regular-webfont.woff') format('woff'),
+         url('../fonts/ufonts.com_news-gothic-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}//newsGotham
+
+$thin     : 200;
+$normal   : 400;
+$bold     : 600;
+$heavy    : 800;
+
+$headFont   : $thin 1.5em/1.5em $fontfamily;
+$mainFont   : normal 1.3em/1.4em $bodycopy;
+$headColor  : lighten($blue, 20);
+

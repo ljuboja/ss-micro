@@ -1,0 +1,54 @@
+header {
+  .fullheight {
+     @include breakpoint(1201px 5000px){
+  @include wbackImage('../images/intro1600.jpg', to bottom, .7, .2, 50% top);
+  }//1600
+   @include breakpoint(601px 1200px){
+  @include wbackImage('../images/intro1200.jpg', to bottom, .7, .2, 50% top);
+  }//1200
+  @include breakpoint(max-width 600px){
+  @include wbackImage('../images/intro400.jpg', to bottom, .7, .2, 50% top);
+  }//400
+    border-bottom:10px solid white;
+    @include display-flex();
+    @include align-items(center);
+    @include justify-content(center);
+    width:100%;
+    height:800px; //kasnije ga prefleka js
+    .hgroup {
+      padding: 20px 0;
+      position:absolute;
+      top:0;
+      left:2%;
+
+
+      h1 {
+        font-family:$fontfamily ;
+        color: $red;
+        font-size: 5em;
+        font-weight: bold;
+        line-height: 1em;
+        text-align: center;
+        @include breakpoint(max-width 400px){
+        font-size:3.8em;
+        }
+          span{
+          font-family:$thinfont;
+          color:$dark;
+          
+          }
+      } //h1
+    } //hgroup
+
+     
+    
+      img {
+        text-align: right;
+        position:absolute;
+        bottom:20px;
+        right:20px;
+        max-width: 60%;  
+        } //img
+      
+  } //fullheight
+} //header
