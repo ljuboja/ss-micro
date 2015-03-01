@@ -150,21 +150,23 @@ a:visited {
 /* line 1, ../../../components/sass/_layout.scss */
 html {
   -webkit-font-smoothing: antialiased;
+  width: 100%;
+  height: 100%;
 }
 
-/* line 5, ../../../components/sass/_layout.scss */
+/* line 7, ../../../components/sass/_layout.scss */
 body {
   position: absolute;
   width: 100%;
   height: 100%;
 }
 
-/* line 11, ../../../components/sass/_layout.scss */
+/* line 13, ../../../components/sass/_layout.scss */
 .scene {
   position: relative;
   padding: 20px 0;
 }
-/* line 15, ../../../components/sass/_layout.scss */
+/* line 17, ../../../components/sass/_layout.scss */
 .scene article {
   max-width: 95%;
   margin-left: auto;
@@ -177,13 +179,13 @@ body {
   clear: both;
 }
 @media (min-width: 1200px) {
-  /* line 11, ../../../components/sass/_layout.scss */
+  /* line 13, ../../../components/sass/_layout.scss */
   .scene {
     padding: 40px 0;
   }
 }
 @media (min-width: 960px) {
-  /* line 24, ../../../components/sass/_layout.scss */
+  /* line 26, ../../../components/sass/_layout.scss */
   .scene article {
     max-width: 60em;
     margin-left: auto;
@@ -743,17 +745,6 @@ header .fullheight img {
   }
 }
 
-/* line 1, ../../../components/sass/modules/_solution.scss */
-#solution {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/solution_big.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding-bootom: 300px;
-}
 /* line 42, ../../../components/sass/_mixins.scss */
 #solution:before, #solution:after {
   content: '';
@@ -763,8 +754,10 @@ header .fullheight img {
 #solution:after {
   clear: both;
 }
-/* line 9, ../../../components/sass/modules/_solution.scss */
+/* line 3, ../../../components/sass/modules/_solution.scss */
 #solution article {
+  width: 100%;
+  height: 100%;
   margin-top: 20px;
   max-width: 90%;
   margin-left: auto;
@@ -777,13 +770,12 @@ header .fullheight img {
   clear: both;
 }
 @media (min-width: 650px) {
-  /* line 9, ../../../components/sass/modules/_solution.scss */
+  /* line 3, ../../../components/sass/modules/_solution.scss */
   #solution article {
     max-width: 30em;
     margin-left: auto;
     margin-right: auto;
     padding: 30px 20px 20px 45px;
-    margin-right: 38%;
   }
   /* line 12, ../../../../../../../var/lib/gems/1.9.1/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
   #solution article:after {
@@ -792,10 +784,15 @@ header .fullheight img {
     clear: both;
   }
 }
-/* line 28, ../../../components/sass/modules/_solution.scss */
+/* line 14, ../../../components/sass/modules/_solution.scss */
+#solution article img {
+  max-width: 100%;
+  max-height: 100%;
+}
+/* line 20, ../../../components/sass/modules/_solution.scss */
 #solution h1 {
   font-family: "gotham_thinregular", "Helvetica Neue", Helvetica, Arial;
-  color: #FFFFFF;
+  color: #000000;
   font-size: 2.2em;
   font-weight: 200;
   line-height: 0.8em;
@@ -803,18 +800,18 @@ header .fullheight img {
   padding: 10px 25px;
 }
 @media (min-width: 960px) {
-  /* line 28, ../../../components/sass/modules/_solution.scss */
+  /* line 20, ../../../components/sass/modules/_solution.scss */
   #solution h1 {
     font-size: 4.5em;
   }
 }
-/* line 40, ../../../components/sass/modules/_solution.scss */
+/* line 32, ../../../components/sass/modules/_solution.scss */
 #solution h1 span {
   font-family: "gotham_probold", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #FFFFFF;
+  color: #000000;
   font-weight: 800;
 }
-/* line 46, ../../../components/sass/modules/_solution.scss */
+/* line 38, ../../../components/sass/modules/_solution.scss */
 #solution img {
   float: right;
   padding-right: 20px;
@@ -822,7 +819,7 @@ header .fullheight img {
   height: auto;
 }
 @media (max-width: 650px) {
-  /* line 46, ../../../components/sass/modules/_solution.scss */
+  /* line 38, ../../../components/sass/modules/_solution.scss */
   #solution img {
     padding: 5px;
     text-align: center;
