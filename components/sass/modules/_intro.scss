@@ -1,13 +1,13 @@
 header {
   .fullheight {
      @include breakpoint(1201px 5000px){
-  @include wbackImage('../images/intro1600.jpg', to bottom, .7, .2, 50% top);
+  @include wbackImage('../images/intro1600.jpg', to left, 1, 0.2, 50% top);
   }//1600
    @include breakpoint(601px 1200px){
-  @include wbackImage('../images/intro1200.jpg', to bottom, .7, .2, 50% top);
+  @include wbackImage('../images/intro1200.jpg', to left, 1, 0.2, 50% top);
   }//1200
   @include breakpoint(max-width 600px){
-  @include wbackImage('../images/intro400.jpg', to bottom, .7, .2, 50% top);
+  @include wbackImage('../images/intro400.jpg', to left, 1, 0.2, 50% top);
   }//400
     border-bottom:10px solid white;
     @include display-flex();
@@ -26,7 +26,6 @@ header {
         font-family:$fontfamily ;
         color: $red;
         font-size: 5em;
-        font-weight: bold;
         line-height: 1em;
         text-align: center;
         @include breakpoint(max-width 400px){

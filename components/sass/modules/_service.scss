@@ -7,7 +7,7 @@
   @include backImage('../images/service1200.jpg', to right, 1, 0, 50% top);
   }//1200
   @include breakpoint(max-width 600px){
-  @include backImage('../images/service1200.jpg', to right, 1, 0.2, 50% top);
+  @include backImage('../images/service400.jpg', to right, 0.5, 0.2, 30% top);
   } //600
   border-bottom:10px solid white;
   @include clearfix;
@@ -32,22 +32,21 @@
   h1 {
         font-family:$thinfont;
         color: $light;
-        font-size: 5em;
+        font-size: 2.2em;
         font-weight: $thin;
         line-height: 0.8em;
         //@include text-shadow($dark 0 0 10px);
         text-align: left;
         padding:20px 25px;
-        @include breakpoint(max-width $small){
-            font-size:2.5em;
-        }//breakpoint
+         @include breakpoint($medium){
+        font-size:4.5em;
+        }
           span{
           font-family:$fontfamily;
           color:$light;
-          font-weight:$heavy;
-          }
+          }//span
       } //h1
-      img{float:right;padding-right:20px;max-width:60%; height:auto;
+      img{float:right;padding-right:20px;max-width:80%; height:auto;
         @include breakpoint(max-width $small){
         padding:5px;text-align:center;
         }

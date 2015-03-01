@@ -32,20 +32,20 @@
   h1 {
         font-family:$fontfamily;
         color: $light;
-        font-size: 5em;
+        font-size: 2.2em;
         line-height: 0.8em;
         //@include text-shadow($dark 0 0 10px);
         text-align: left;
         padding:20px 25px;
-        @include breakpoint(max-width $small){
-            font-size:2.5em;
-        }//breakpoint
+         @include breakpoint($medium){
+        font-size:4.5em;
+        }
           span{
           font-family:$thinfont;
           color:$light;
           }
       } //h1
-      img{float:right;padding-right:20px;max-width:60%; height:auto;
+      img{float:right;padding-right:20px;max-width:80%; height:auto;
         @include breakpoint(max-width $small){
         padding:5px;text-align:center;
         }

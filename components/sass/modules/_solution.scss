@@ -28,15 +28,15 @@
   h1 {
         font-family:$thinfont;
         color: $light;
-        font-size: 5em;
+        font-size: 2.2em;
         font-weight: $thin;
         line-height: 0.8em;
         //@include text-shadow($dark 0 0 10px);
         text-align: left;
         padding:10px 25px;
-        @include breakpoint(max-width $small){
-            font-size:2.5em;
-        }//breakpoint
+         @include breakpoint($medium){
+        font-size:4.5em;
+        }
           span{
           font-family:$fontfamily;
           color:$light;

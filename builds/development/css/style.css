@@ -93,25 +93,30 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 1, ../../../components/sass/_base.scss */
 body {
-  font: normal 1.3em/1.4em "news_gothicregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal 1.1em/1.3em "news_gothicregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background: #FFFFFF;
   color: #FFFFFF;
 }
+@media (min-width: 960px) {
+  /* line 1, ../../../components/sass/_base.scss */
+  body {
+    font: normal 1.3em/1.4em "news_gothicregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+}
 
-/* line 9, ../../../components/sass/_base.scss */
+/* line 12, ../../../components/sass/_base.scss */
 p {
-  font-weight: 200;
   padding-bottom: 15px;
 }
 
-/* line 15, ../../../components/sass/_base.scss */
+/* line 17, ../../../components/sass/_base.scss */
 ul {
   margin: 0.75em 0;
   padding: 0 1em;
   list-style: none;
 }
 
-/* line 20, ../../../components/sass/_base.scss */
+/* line 22, ../../../components/sass/_base.scss */
 li:before {
   content: "";
   border-color: transparent #FFFFFF;
@@ -125,36 +130,41 @@ li:before {
   position: relative;
 }
 
-/* line 33, ../../../components/sass/_base.scss */
+/* line 35, ../../../components/sass/_base.scss */
 a:link {
   color: white;
   text-decoration: none;
 }
 
-/* line 39, ../../../components/sass/_base.scss */
+/* line 41, ../../../components/sass/_base.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 43, ../../../components/sass/_base.scss */
+/* line 45, ../../../components/sass/_base.scss */
 a:visited {
   color: #000000;
   text-decoration: underline;
 }
 
 /* line 1, ../../../components/sass/_layout.scss */
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 5, ../../../components/sass/_layout.scss */
 body {
   position: absolute;
   width: 100%;
   height: 100%;
 }
 
-/* line 7, ../../../components/sass/_layout.scss */
+/* line 11, ../../../components/sass/_layout.scss */
 .scene {
   position: relative;
   padding: 20px 0;
 }
-/* line 11, ../../../components/sass/_layout.scss */
+/* line 15, ../../../components/sass/_layout.scss */
 .scene article {
   max-width: 95%;
   margin-left: auto;
@@ -167,13 +177,13 @@ body {
   clear: both;
 }
 @media (min-width: 1200px) {
-  /* line 7, ../../../components/sass/_layout.scss */
+  /* line 11, ../../../components/sass/_layout.scss */
   .scene {
     padding: 40px 0;
   }
 }
 @media (min-width: 960px) {
-  /* line 20, ../../../components/sass/_layout.scss */
+  /* line 24, ../../../components/sass/_layout.scss */
   .scene article {
     max-width: 60em;
     margin-left: auto;
@@ -202,7 +212,7 @@ header .fullheight {
 @media (min-width: 1201px) and (max-width: 5000px) {
   /* line 2, ../../../components/sass/modules/_intro.scss */
   header .fullheight {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.2)), url("../images/intro1600.jpg");
+    background: linear-gradient(to left, #ffffff, rgba(255, 255, 255, 0.2)), url("../images/intro1600.jpg");
     background-repeat: no-repeat;
     background-position: 50% top;
     -webkit-background-size: cover;
@@ -214,7 +224,7 @@ header .fullheight {
 @media (min-width: 601px) and (max-width: 1200px) {
   /* line 2, ../../../components/sass/modules/_intro.scss */
   header .fullheight {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.2)), url("../images/intro1200.jpg");
+    background: linear-gradient(to left, #ffffff, rgba(255, 255, 255, 0.2)), url("../images/intro1200.jpg");
     background-repeat: no-repeat;
     background-position: 50% top;
     -webkit-background-size: cover;
@@ -226,7 +236,7 @@ header .fullheight {
 @media (max-width: 600px) {
   /* line 2, ../../../components/sass/modules/_intro.scss */
   header .fullheight {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.2)), url("../images/intro400.jpg");
+    background: linear-gradient(to left, #ffffff, rgba(255, 255, 255, 0.2)), url("../images/intro400.jpg");
     background-repeat: no-repeat;
     background-position: 50% top;
     -webkit-background-size: cover;
@@ -247,7 +257,6 @@ header .fullheight .hgroup h1 {
   font-family: "gotham_probold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #D2123D;
   font-size: 5em;
-  font-weight: bold;
   line-height: 1em;
   text-align: center;
 }
@@ -257,12 +266,12 @@ header .fullheight .hgroup h1 {
     font-size: 3.8em;
   }
 }
-/* line 35, ../../../components/sass/modules/_intro.scss */
+/* line 34, ../../../components/sass/modules/_intro.scss */
 header .fullheight .hgroup h1 span {
   font-family: "gotham_thinregular", "Helvetica Neue", Helvetica, Arial;
   color: #000000;
 }
-/* line 45, ../../../components/sass/modules/_intro.scss */
+/* line 44, ../../../components/sass/modules/_intro.scss */
 header .fullheight img {
   text-align: right;
   position: absolute;
@@ -355,33 +364,32 @@ header .fullheight img {
 #about h1 {
   font-family: "gotham_thinregular", "Helvetica Neue", Helvetica, Arial;
   color: #FFFFFF;
-  font-size: 5em;
+  font-size: 2.2em;
   font-weight: 200;
   line-height: 0.8em;
   text-align: left;
   padding: 20px 25px;
 }
-@media (max-width: 650px) {
+@media (min-width: 960px) {
   /* line 29, ../../../components/sass/modules/_about.scss */
   #about h1 {
-    font-size: 3em;
+    font-size: 4.5em;
   }
 }
 /* line 41, ../../../components/sass/modules/_about.scss */
 #about h1 span {
   font-family: "gotham_probold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #FFFFFF;
-  font-weight: 800;
 }
-/* line 48, ../../../components/sass/modules/_about.scss */
+/* line 47, ../../../components/sass/modules/_about.scss */
 #about img {
   float: right;
   padding-right: 20px;
-  max-width: 60%;
+  max-width: 80%;
   height: auto;
 }
 @media (max-width: 650px) {
-  /* line 48, ../../../components/sass/modules/_about.scss */
+  /* line 47, ../../../components/sass/modules/_about.scss */
   #about img {
     padding: 5px;
     text-align: center;
@@ -472,33 +480,32 @@ header .fullheight img {
 #discover h1 {
   font-family: "gotham_probold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #FFFFFF;
-  font-size: 5em;
+  font-size: 2.2em;
   font-weight: 200;
   line-height: 0.8em;
   text-align: left;
   padding: 20px 25px;
 }
-@media (max-width: 650px) {
+@media (min-width: 960px) {
   /* line 32, ../../../components/sass/modules/_discover.scss */
   #discover h1 {
-    font-size: 2.5em;
+    font-size: 4.5em;
   }
 }
 /* line 44, ../../../components/sass/modules/_discover.scss */
 #discover h1 span {
   font-family: "gotham_thinregular", "Helvetica Neue", Helvetica, Arial;
   color: #FFFFFF;
-  font-weight: 800;
 }
-/* line 50, ../../../components/sass/modules/_discover.scss */
+/* line 49, ../../../components/sass/modules/_discover.scss */
 #discover img {
   float: right;
   padding-right: 20px;
-  max-width: 60%;
+  max-width: 80%;
   height: auto;
 }
 @media (max-width: 650px) {
-  /* line 50, ../../../components/sass/modules/_discover.scss */
+  /* line 49, ../../../components/sass/modules/_discover.scss */
   #discover img {
     padding: 5px;
     text-align: center;
@@ -512,7 +519,7 @@ header .fullheight img {
 @media (min-width: 1201px) and (max-width: 5000px) {
   /* line 1, ../../../components/sass/modules/_design.scss */
   #design {
-    background: linear-gradient(to right, #ffffff, rgba(255, 255, 255, 0.3)), url("../images/design1600.jpg");
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url("../images/design1600.jpg");
     background-repeat: no-repeat;
     background-position: 50% top;
     -webkit-background-size: cover;
@@ -524,7 +531,7 @@ header .fullheight img {
 @media (min-width: 601px) and (max-width: 1200px) {
   /* line 1, ../../../components/sass/modules/_design.scss */
   #design {
-    background: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0)), url("../images/design1200.jpg");
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url("../images/design1200.jpg");
     background-repeat: no-repeat;
     background-position: 50% top;
     -webkit-background-size: cover;
@@ -536,9 +543,9 @@ header .fullheight img {
 @media (max-width: 600px) {
   /* line 1, ../../../components/sass/modules/_design.scss */
   #design {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("../images/design400.jpg");
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url("../images/design400.jpg");
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: 50% top;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -557,7 +564,7 @@ header .fullheight img {
 /* line 13, ../../../components/sass/modules/_design.scss */
 #design article {
   margin-top: 40px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.75);
   padding: 30px;
   max-width: 90%;
   margin-left: auto;
@@ -589,15 +596,15 @@ header .fullheight img {
 #design h1 {
   font-family: "gotham_probold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #FFFFFF;
-  font-size: 5em;
+  font-size: 2em;
   line-height: 0.8em;
   text-align: left;
   padding: 20px 25px;
 }
-@media (max-width: 600px) {
+@media (min-width: 960px) {
   /* line 30, ../../../components/sass/modules/_design.scss */
   #design h1 {
-    font-size: 2em;
+    font-size: 4.5em;
   }
 }
 /* line 41, ../../../components/sass/modules/_design.scss */
@@ -609,7 +616,7 @@ header .fullheight img {
 #design img {
   float: right;
   padding-right: 20px;
-  max-width: 60%;
+  max-width: 80%;
   height: auto;
 }
 @media (max-width: 650px) {
@@ -651,9 +658,9 @@ header .fullheight img {
 @media (max-width: 600px) {
   /* line 1, ../../../components/sass/modules/_service.scss */
   #service {
-    background: linear-gradient(to right, #000000, rgba(0, 0, 0, 0.2)), url("../images/service1200.jpg");
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("../images/service400.jpg");
     background-repeat: no-repeat;
-    background-position: 50% top;
+    background-position: 30% top;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -704,33 +711,32 @@ header .fullheight img {
 #service h1 {
   font-family: "gotham_thinregular", "Helvetica Neue", Helvetica, Arial;
   color: #FFFFFF;
-  font-size: 5em;
+  font-size: 2.2em;
   font-weight: 200;
   line-height: 0.8em;
   text-align: left;
   padding: 20px 25px;
 }
-@media (max-width: 650px) {
+@media (min-width: 960px) {
   /* line 32, ../../../components/sass/modules/_service.scss */
   #service h1 {
-    font-size: 2.5em;
+    font-size: 4.5em;
   }
 }
 /* line 44, ../../../components/sass/modules/_service.scss */
 #service h1 span {
   font-family: "gotham_probold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #FFFFFF;
-  font-weight: 800;
 }
-/* line 50, ../../../components/sass/modules/_service.scss */
+/* line 49, ../../../components/sass/modules/_service.scss */
 #service img {
   float: right;
   padding-right: 20px;
-  max-width: 60%;
+  max-width: 80%;
   height: auto;
 }
 @media (max-width: 650px) {
-  /* line 50, ../../../components/sass/modules/_service.scss */
+  /* line 49, ../../../components/sass/modules/_service.scss */
   #service img {
     padding: 5px;
     text-align: center;
@@ -790,16 +796,16 @@ header .fullheight img {
 #solution h1 {
   font-family: "gotham_thinregular", "Helvetica Neue", Helvetica, Arial;
   color: #FFFFFF;
-  font-size: 5em;
+  font-size: 2.2em;
   font-weight: 200;
   line-height: 0.8em;
   text-align: left;
   padding: 10px 25px;
 }
-@media (max-width: 650px) {
+@media (min-width: 960px) {
   /* line 28, ../../../components/sass/modules/_solution.scss */
   #solution h1 {
-    font-size: 2.5em;
+    font-size: 4.5em;
   }
 }
 /* line 40, ../../../components/sass/modules/_solution.scss */
@@ -910,15 +916,15 @@ header .fullheight img {
 #logistics h1 {
   font-family: "gotham_probold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #FFFFFF;
-  font-size: 5em;
+  font-size: 2.2em;
   line-height: 0.8em;
   text-align: left;
   padding: 20px 25px;
 }
-@media (max-width: 650px) {
+@media (min-width: 960px) {
   /* line 32, ../../../components/sass/modules/_logistics.scss */
   #logistics h1 {
-    font-size: 2.5em;
+    font-size: 4.5em;
   }
 }
 /* line 43, ../../../components/sass/modules/_logistics.scss */
@@ -930,7 +936,7 @@ header .fullheight img {
 #logistics img {
   float: right;
   padding-right: 20px;
-  max-width: 60%;
+  max-width: 80%;
   height: auto;
 }
 @media (max-width: 650px) {
@@ -993,10 +999,7 @@ header .fullheight img {
 /* line 13, ../../../components/sass/modules/_review.scss */
 #review article {
   margin-top: 40px;
-  background-color: rgba(0, 0, 0, 0.65);
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
   padding: 30px;
   max-width: 90%;
   margin-left: auto;
@@ -1024,30 +1027,30 @@ header .fullheight img {
     clear: both;
   }
 }
-/* line 32, ../../../components/sass/modules/_review.scss */
+/* line 31, ../../../components/sass/modules/_review.scss */
 #review h1 {
   font-family: "gotham_probold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #FFFFFF;
-  font-size: 2.2em;
+  font-size: 1.8em;
   line-height: 0.8em;
   text-align: left;
   padding: 20px 25px;
 }
 @media (min-width: 960px) {
-  /* line 32, ../../../components/sass/modules/_review.scss */
+  /* line 31, ../../../components/sass/modules/_review.scss */
   #review h1 {
     font-size: 4.5em;
   }
 }
-/* line 46, ../../../components/sass/modules/_review.scss */
+/* line 45, ../../../components/sass/modules/_review.scss */
 #review img {
   float: right;
   padding-right: 20px;
-  max-width: 60%;
+  max-width: 80%;
   height: auto;
 }
 @media (max-width: 650px) {
-  /* line 46, ../../../components/sass/modules/_review.scss */
+  /* line 45, ../../../components/sass/modules/_review.scss */
   #review img {
     padding: 5px;
     text-align: center;
@@ -1102,7 +1105,7 @@ header .fullheight img {
 /* line 12, ../../../components/sass/modules/_summary.scss */
 #summary article {
   margin-top: 40px;
-  background-color: rgba(0, 0, 0, 0.45);
+  background-color: rgba(0, 0, 0, 0.65);
   padding: 30px;
   max-width: 90%;
   margin-left: auto;
@@ -1134,16 +1137,16 @@ header .fullheight img {
 #summary h1 {
   font-family: "gotham_probold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #FFFFFF;
-  font-size: 5em;
+  font-size: 2.2em;
   font-weight: 200;
   line-height: 0.8em;
   text-align: left;
   padding: 20px 25px;
 }
-@media (max-width: 650px) {
+@media (min-width: 960px) {
   /* line 24, ../../../components/sass/modules/_summary.scss */
   #summary h1 {
-    font-size: 2.5em;
+    font-size: 4.5em;
   }
 }
 /* line 37, ../../../components/sass/modules/_summary.scss */
@@ -1151,7 +1154,7 @@ header .fullheight img {
   float: right;
   padding-right: 20px;
   margin-top: 1em;
-  max-width: 70%;
+  max-width: 80%;
   height: auto;
 }
 @media (max-width: 650px) {

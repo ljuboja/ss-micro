@@ -1,14 +1,16 @@
 body {
-  font: $mainFont;
+  font: $phoneFont ;
   background: $backgroundColor;
-  color: $light
+  color: $light;
+  @include breakpoint ($medium){
+    font:$mainFont;
+  }
 }
 
 
 
 p {
 
-  font-weight: $thin;
   padding-bottom: 15px;
 }
 
