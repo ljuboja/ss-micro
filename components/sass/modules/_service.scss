@@ -7,13 +7,13 @@
   @include backImage('../images/service1200.jpg', to right, 1, 0, 50% top);
   }//1200
   @include breakpoint(max-width 600px){
-  @include backImage('../images/service400.jpg', to right, 0.5, 0.2, 30% top);
+  @include backImage('../images/service768.jpg', to right, 0.5, 0.2, 30% top);
   } //600
   border-bottom:10px solid white;
   @include clearfix;
   article {
     margin-top:40px;
-    background-color:rgba($dark, 0.55);
+    background-color:rgba($dark, 0.45);
     padding:30px;
  
    

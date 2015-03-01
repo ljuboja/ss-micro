@@ -238,7 +238,7 @@ header .fullheight {
 @media (max-width: 600px) {
   /* line 2, ../../../components/sass/modules/_intro.scss */
   header .fullheight {
-    background: linear-gradient(to left, #ffffff, rgba(255, 255, 255, 0.2)), url("../images/intro400.jpg");
+    background: linear-gradient(to left, #ffffff, rgba(255, 255, 255, 0.2)), url("../images/intro768.jpg");
     background-repeat: no-repeat;
     background-position: 50% top;
     -webkit-background-size: cover;
@@ -313,7 +313,7 @@ header .fullheight img {
 @media (max-width: 600px) {
   /* line 1, ../../../components/sass/modules/_about.scss */
   #about {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url("../images/about400.jpg");
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url("../images/about1200.jpg");
     background-repeat: no-repeat;
     background-position: 50% top;
     -webkit-background-size: cover;
@@ -660,7 +660,7 @@ header .fullheight img {
 @media (max-width: 600px) {
   /* line 1, ../../../components/sass/modules/_service.scss */
   #service {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("../images/service400.jpg");
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("../images/service768.jpg");
     background-repeat: no-repeat;
     background-position: 30% top;
     -webkit-background-size: cover;
@@ -681,7 +681,7 @@ header .fullheight img {
 /* line 14, ../../../components/sass/modules/_service.scss */
 #service article {
   margin-top: 40px;
-  background-color: rgba(0, 0, 0, 0.55);
+  background-color: rgba(0, 0, 0, 0.45);
   padding: 30px;
   max-width: 90%;
   margin-left: auto;
@@ -975,7 +975,7 @@ header .fullheight img {
 @media (max-width: 600px) {
   /* line 1, ../../../components/sass/modules/_review.scss */
   #review {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url("../images/review400.jpg");
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url("../images/review768.jpg");
     background-repeat: no-repeat;
     background-position: 50% top;
     -webkit-background-size: cover;
