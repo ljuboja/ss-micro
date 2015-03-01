@@ -147,6 +147,23 @@ a:visited {
   text-decoration: underline;
 }
 
+/* line 50, ../../../components/sass/_base.scss */
+h1 a:link {
+  color: #D2123D;
+}
+
+/* line 54, ../../../components/sass/_base.scss */
+h1 a:hover {
+  text-decoration: none;
+  border-bottom: 3px solid #D2123D;
+}
+
+/* line 58, ../../../components/sass/_base.scss */
+h1 a:visited {
+  color: #D2123D;
+  text-decoration: none;
+}
+
 /* line 1, ../../../components/sass/_layout.scss */
 html {
   -webkit-font-smoothing: antialiased;
@@ -745,6 +762,15 @@ header .fullheight img {
   }
 }
 
+/* line 1, ../../../components/sass/modules/_solution.scss */
+#solution {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzU4NWQ3NCIvPjxzdG9wIG9mZnNldD0iMjAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+PHN0b3Agb2Zmc2V0PSI4MCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNhYWFhYWEiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #585d74), color-stop(20%, #ffffff), color-stop(80%, #ffffff), color-stop(100%, #aaaaaa));
+  background-image: -moz-linear-gradient(#585d74, #ffffff 20%, #ffffff 80%, #aaaaaa);
+  background-image: -webkit-linear-gradient(#585d74, #ffffff 20%, #ffffff 80%, #aaaaaa);
+  background-image: linear-gradient(#585d74, #ffffff 20%, #ffffff 80%, #aaaaaa);
+}
 /* line 42, ../../../components/sass/_mixins.scss */
 #solution:before, #solution:after {
   content: '';
@@ -754,7 +780,7 @@ header .fullheight img {
 #solution:after {
   clear: both;
 }
-/* line 3, ../../../components/sass/modules/_solution.scss */
+/* line 4, ../../../components/sass/modules/_solution.scss */
 #solution article {
   width: 100%;
   height: 100%;
@@ -770,7 +796,7 @@ header .fullheight img {
   clear: both;
 }
 @media (min-width: 650px) {
-  /* line 3, ../../../components/sass/modules/_solution.scss */
+  /* line 4, ../../../components/sass/modules/_solution.scss */
   #solution article {
     max-width: 30em;
     margin-left: auto;
@@ -784,15 +810,15 @@ header .fullheight img {
     clear: both;
   }
 }
-/* line 14, ../../../components/sass/modules/_solution.scss */
+/* line 15, ../../../components/sass/modules/_solution.scss */
 #solution article img {
   max-width: 100%;
   max-height: 100%;
 }
-/* line 20, ../../../components/sass/modules/_solution.scss */
+/* line 21, ../../../components/sass/modules/_solution.scss */
 #solution h1 {
   font-family: "gotham_thinregular", "Helvetica Neue", Helvetica, Arial;
-  color: #000000;
+  color: #FFFFFF;
   font-size: 2.2em;
   font-weight: 200;
   line-height: 0.8em;
@@ -800,18 +826,18 @@ header .fullheight img {
   padding: 10px 25px;
 }
 @media (min-width: 960px) {
-  /* line 20, ../../../components/sass/modules/_solution.scss */
+  /* line 21, ../../../components/sass/modules/_solution.scss */
   #solution h1 {
     font-size: 4.5em;
   }
 }
-/* line 32, ../../../components/sass/modules/_solution.scss */
+/* line 33, ../../../components/sass/modules/_solution.scss */
 #solution h1 span {
   font-family: "gotham_probold", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #000000;
+  color: #FFFFFF;
   font-weight: 800;
 }
-/* line 38, ../../../components/sass/modules/_solution.scss */
+/* line 39, ../../../components/sass/modules/_solution.scss */
 #solution img {
   float: right;
   padding-right: 20px;
@@ -819,7 +845,7 @@ header .fullheight img {
   height: auto;
 }
 @media (max-width: 650px) {
-  /* line 38, ../../../components/sass/modules/_solution.scss */
+  /* line 39, ../../../components/sass/modules/_solution.scss */
   #solution img {
     padding: 5px;
     text-align: center;

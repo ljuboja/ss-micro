@@ -1,4 +1,5 @@
 #solution {
+ @include background-image(linear-gradient(#585D74, white 20%, white 80%, #aaaaaa));
   @include clearfix;
   article {
     width:100%;
@@ -19,7 +20,7 @@
 
   h1 {
         font-family:$thinfont;
-        color: $dark;
+        color: $light;
         font-size: 2.2em;
         font-weight: $thin;
         line-height: 0.8em;
@@ -31,7 +32,7 @@
         }
           span{
           font-family:$fontfamily;
-          color:$dark;
+          color:$light;
           font-weight:$heavy;
           }
       } //h1

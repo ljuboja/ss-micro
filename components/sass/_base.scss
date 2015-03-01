@@ -46,3 +46,16 @@ a:visited{
 	color:$dark;
 	text-decoration:underline;
 }
+
+h1 a:link{
+  color:$red;
+}
+
+h1 a:hover{
+  text-decoration:none;
+  border-bottom:3px solid $red;
+}
+h1 a:visited{
+  color:$red;
+  text-decoration:none;
+}
