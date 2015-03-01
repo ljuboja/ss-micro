@@ -21,7 +21,7 @@ var env,
     outputDir,
     sassStyle;
 
-env = 'development';
+env = 'production';
 
 if (env==='development') {
   outputDir = 'builds/development/';
@@ -118,8 +118,8 @@ gulp.task('move', function() {
   .pipe(gulpif(env === 'production', gulp.dest(outputDir+'images')))
 });
 // Copy fonts to production
-gulp.task('move', function() {
-  gulp.src('builds/development/fonts/**/*.*')
-  .pipe(gulpif(env === 'production', gulp.dest(outputDir+'fonts')))
-});
+// gulp.task('move', function() {
+//   gulp.src('builds/development/fonts/**/*.*')
+//   .pipe(gulpif(env === 'production', gulp.dest(outputDir+'fonts')))
+// });
 gulp.task('default', ['watch', 'html', 'js', 'compass', 'move', 'connect']);
