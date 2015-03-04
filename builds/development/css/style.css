@@ -765,12 +765,13 @@ header .fullheight img {
 
 /* line 1, ../../../components/sass/modules/_solution.scss */
 #solution {
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzU4NWQ3NCIvPjxzdG9wIG9mZnNldD0iMjAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+PHN0b3Agb2Zmc2V0PSI4MCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNhYWFhYWEiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #585d74), color-stop(20%, #ffffff), color-stop(80%, #ffffff), color-stop(100%, #aaaaaa));
-  background-image: -moz-linear-gradient(#585d74, #ffffff 20%, #ffffff 80%, #aaaaaa);
-  background-image: -webkit-linear-gradient(#585d74, #ffffff 20%, #ffffff 80%, #aaaaaa);
-  background-image: linear-gradient(#585d74, #ffffff 20%, #ffffff 80%, #aaaaaa);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url("../images/solution_big.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 /* line 42, ../../../components/sass/_mixins.scss */
 #solution:before, #solution:after {
@@ -781,7 +782,7 @@ header .fullheight img {
 #solution:after {
   clear: both;
 }
-/* line 4, ../../../components/sass/modules/_solution.scss */
+/* line 5, ../../../components/sass/modules/_solution.scss */
 #solution article {
   width: 100%;
   height: 100%;
@@ -797,7 +798,7 @@ header .fullheight img {
   clear: both;
 }
 @media (min-width: 650px) {
-  /* line 4, ../../../components/sass/modules/_solution.scss */
+  /* line 5, ../../../components/sass/modules/_solution.scss */
   #solution article {
     max-width: 30em;
     margin-left: auto;
@@ -811,51 +812,7 @@ header .fullheight img {
     clear: both;
   }
 }
-/* line 14, ../../../components/sass/modules/_solution.scss */
-#solution article .circle {
-  position: relative;
-  background: #D2123D;
-  width: 200px;
-  height: 200px;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  -moz-box-shadow: grey 0px 2px 10px;
-  -webkit-box-shadow: grey 0px 2px 10px;
-  box-shadow: grey 0px 2px 10px;
-}
-/* line 21, ../../../components/sass/modules/_solution.scss */
-#solution article .circle a {
-  position: absolute;
-  top: 30%;
-  left: 30%;
-}
-/* line 27, ../../../components/sass/modules/_solution.scss */
-#solution article img {
-  max-width: 100%;
-  max-height: 100%;
-}
-/* line 32, ../../../components/sass/modules/_solution.scss */
-#solution .prvi {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 50%;
-  float: left;
-  padding-left: 0.83333%;
-  padding-right: 0.83333%;
-}
-/* line 35, ../../../components/sass/modules/_solution.scss */
-#solution .drugi {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 50%;
-  float: right;
-  padding-left: 0.83333%;
-  padding-right: 0.83333%;
-}
-/* line 38, ../../../components/sass/modules/_solution.scss */
+/* line 17, ../../../components/sass/modules/_solution.scss */
 #solution h1 {
   font-family: "gotham_thinregular", "Helvetica Neue", Helvetica, Arial;
   color: #FFFFFF;
@@ -866,30 +823,24 @@ header .fullheight img {
   padding: 0px 25px;
 }
 @media (min-width: 960px) {
-  /* line 38, ../../../components/sass/modules/_solution.scss */
+  /* line 17, ../../../components/sass/modules/_solution.scss */
   #solution h1 {
     font-size: 4.5em;
   }
 }
-/* line 50, ../../../components/sass/modules/_solution.scss */
+/* line 29, ../../../components/sass/modules/_solution.scss */
 #solution h1 span {
   font-family: "gotham_probold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #FFFFFF;
   font-weight: 800;
 }
-/* line 56, ../../../components/sass/modules/_solution.scss */
+/* line 35, ../../../components/sass/modules/_solution.scss */
 #solution img {
   float: right;
   padding-right: 20px;
   max-width: 60%;
   height: auto;
-}
-@media (max-width: 650px) {
-  /* line 56, ../../../components/sass/modules/_solution.scss */
-  #solution img {
-    padding: 5px;
-    text-align: center;
-  }
+  padding-top: 385px;
 }
 
 /* line 1, ../../../components/sass/modules/_logistics.scss */
