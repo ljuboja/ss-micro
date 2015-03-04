@@ -1,13 +1,6 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 var $ = require('jquery');
 var jQuery = $;
-(function(){'use strict';function e(a){this.a=document.createElement("div");this.a.setAttribute("aria-hidden","true");this.a.appendChild(document.createTextNode(a));this.b=document.createElement("span");this.c=document.createElement("span");this.f=document.createElement("span");this.e=document.createElement("span");this.d=-1;this.b.style.cssText="display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;";this.c.style.cssText="display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;";
-this.e.style.cssText="display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;";this.f.style.cssText="display:inline-block;width:200%;height:200%;";this.b.appendChild(this.f);this.c.appendChild(this.e);this.a.appendChild(this.b);this.a.appendChild(this.c)}function t(a,b,c){a.a.style.cssText="min-width:20px;min-height:20px;display:inline-block;visibility:hidden;position:absolute;width:auto;margin:0;padding:0;top:0;white-space:nowrap;font-size:100px;font-family:"+b+";"+c}
-function u(a){var b=a.a.offsetWidth,c=b+100;a.e.style.width=c+"px";a.c.scrollLeft=c;a.b.scrollLeft=a.b.scrollWidth+100;return a.d!==b?(a.d=b,!0):!1}function v(a,b){a.b.addEventListener("scroll",function(){u(a)&&null!==a.a.parentNode&&b(a.d)},!1);a.c.addEventListener("scroll",function(){u(a)&&null!==a.a.parentNode&&b(a.d)},!1);u(a)};function w(a,b){this.family=a;this.style=b.style||"normal";this.variant=b.variant||"normal";this.weight=b.weight||"normal";this.stretch=b.stretch||"stretch";this.featureSettings=b.featureSettings||"normal"}var x=null;
-w.prototype.a=function(a,b){var c=a||"BESbswy",z=b||3E3,f="font-style:"+this.style+";font-variant:"+this.variant+";font-weight:"+this.weight+";font-stretch:"+this.stretch+";font-feature-settings:"+this.featureSettings+";-moz-font-feature-settings:"+this.featureSettings+";-webkit-font-feature-settings:"+this.featureSettings+";",g=document.createElement("div"),m=new e(c),n=new e(c),p=new e(c),h=-1,d=-1,k=-1,q=-1,r=-1,s=-1,l=this;t(m,"sans-serif",f);t(n,"serif",f);t(p,"monospace",f);g.appendChild(m.a);
-g.appendChild(n.a);g.appendChild(p.a);document.body.appendChild(g);q=m.a.offsetWidth;r=n.a.offsetWidth;s=p.a.offsetWidth;return new Promise(function(a,b){function c(){null!==g.parentNode&&document.body.removeChild(g)}function y(){if(-1!==h&&-1!==d&&-1!==k&&h===d&&d===k){if(null===x){var b=/AppleWeb[kK]it\/([0-9]+)(?:\.([0-9]+))/.exec(window.navigator.userAgent);x=!!b&&(536>parseInt(b[1],10)||536===parseInt(b[1],10)&&11>=parseInt(b[2],10))}x?h===q&&d===q&&k===q||h===r&&d===r&&k===r||h===s&&d===s&&
-k===s||(c(),a(l)):(c(),a(l))}}setTimeout(function(){c();b(l)},z);v(m,function(a){h=a;y()});t(m,l.family+",sans-serif",f);v(n,function(a){d=a;y()});t(n,l.family+",serif",f);v(p,function(a){k=a;y()});t(p,l.family+",monospace",f)})};window.FontFaceObserver=w;window.FontFaceObserver.prototype.check=w.prototype.a;}());
-
 // $(function() {
 
 //   //window height
@@ -29,7 +22,34 @@ k===s||(c(),a(l)):(c(),a(l))}}setTimeout(function(){c();b(l)},z);v(m,function(a)
  
 // }); //on load
 
+jQuery(document).ready(function($){
+	// browser window scroll (in pixels) after which the "back to top" link is shown
+	var offset = 500,
+		//browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+		offset_opacity = 1200,
+		//duration of the top scrolling animation (in ms)
+		scroll_top_duration = 700,
+		//grab the "back to top" link
+		$back_to_top = $('.cd-top');
 
+	//hide or show the "back to top" link
+	$(window).scroll(function(){
+		( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+		if( $(this).scrollTop() > offset_opacity ) { 
+			$back_to_top.addClass('cd-fade-out');
+		}
+	});
+
+	//smooth scroll to top
+	$back_to_top.on('click', function(event){
+		event.preventDefault();
+		$('body,html').animate({
+			scrollTop: 0 ,
+		 	}, scroll_top_duration
+		);
+	});
+
+});
 },{"jquery":2}],2:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v2.1.3
